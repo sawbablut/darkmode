@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mode-tog"></div>
+    <div class="container">
+        <div class="dark-mode"></div>
+    </div>
+
+    <h1>DARK MODE</h1>
+
+    <script>
+        let modeToggle = document.querySelector('.mode-tog');
+        let darkMode = document.querySelector('.dark-mode');
+
+        modeToggle.addEventListener('click', () => {
+            darkMode.classList.toggle('active');
+            modeToggle.classList.toggle('active');
+        })
+    </script>
+
+</body>
+</html>
